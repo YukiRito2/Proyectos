@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="result" disabled>
+        <div class="buttons">
+            <button class="button number" onclick="addToResult('7')">7</button>
+            <button class="button number" onclick="addToResult('8')">8</button>
+            <button class="button number" onclick="addToResult('9')">9</button>
+            <button class="button operator" onclick="addToResult('/')"><i class="fas fa-divide"></i></button>
+            <button class="button number" onclick="addToResult('4')">4</button>
+            <button class="button number" onclick="addToResult('5')">5</button>
+            <button class="button number" onclick="addToResult('6')">6</button>
+            <button class="button operator" onclick="addToResult('*')"><i class="fas fa-times"></i></button>
+            <button class="button number" onclick="addToResult('1')">1</button>
+            <button class="button number" onclick="addToResult('2')">2</button>
+            <button class="button number" onclick="addToResult('3')">3</button>
+            <button class="button operator" onclick="addToResult('-')"><i class="fas fa-minus"></i></button>
+            <button class="button number" onclick="addToResult('0')">0</button>
+            <button class="button" onclick="addToResult('.')">.</button>
+            <button class="button operator" onclick="calculateResult()"><i class="fas fa-equals"></i></button>
+            <button class="button operator" onclick="addToResult('+')"><i class="fas fa-plus"></i></button>
+            <button class="button clear" onclick="clearResult()"><i class="fas fa-backspace"></i></button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
